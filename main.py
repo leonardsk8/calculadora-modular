@@ -7,7 +7,8 @@
 # Press the green button in the gutter to run the script.
 import math
 
-def calcularDivisionModular(a,b,m):
+
+def calcularDivisionModular(a, b, m):
     a = a % m
     inv = moduloInverso(b, m)
     if (inv == -1):
@@ -25,16 +26,17 @@ def moduloInverso(b, m):
         # then modulo inverse is b^(m-2) mode m
         return pow(b, m - 2, m)
 
+
 if __name__ == '__main__':
     print('CRIPTOLOGIA')
     Zn = int(input('INGRESE EL Zn: '))
     a = int(input('INGRESE EL A: '))
     b = int(input('INGRESE EL B: '))
-    suma = (a + b)%Zn
-    resta = (a - b)%Zn
-    Multiplicacion = (a * b)%Zn
-    division = (a / b)%Zn
-    print('Suma: ',suma)
-    print("Resta: ",resta)
-    print("Multiplicación: ",Multiplicacion)
-    calcularDivisionModular(a,b,Zn)
+    suma = (a + b) % Zn
+    resta = (a - b) % Zn
+    Multiplicacion = (a * b) % Zn
+    division = (a / b) % Zn
+    print('Suma: ', suma)
+    print("Resta: ", resta)
+    print("Multiplicación: ", Multiplicacion)
+    calcularDivisionModular(a, b, Zn)
