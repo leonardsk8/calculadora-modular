@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
 def moduloInverso(A, Zn):
     maximoComunDivisor = math.gcd(A, Zn)  # Greatest common divisor - Máximo común divisor
-    print("El máximo común divisor es: ",maximoComunDivisor)
+    print("El máximo común divisor es: ", maximoComunDivisor)
     # Es decir (b * g) == c mod Zn == 1
     if (maximoComunDivisor != 1):
         print("Los numeros no son primos relativos")
@@ -27,9 +27,10 @@ def moduloInverso(A, Zn):
         print("Los numeros son primos relativos")
         return pow(A, Zn - 2, Zn)  # Lo mismo que b^(Zn-2) mod Zn
 
+
 if __name__ == '__main__':
     print('\n\n\nPARCIAL CRIPTOLOGIA MÉTODO 2')
     Zn = 431
     A = 29
-    inverso = moduloInverso(A,Zn)
-    print("El inverso calculado por MCD es: ",inverso)
+    inverso = moduloInverso(A, Zn)
+    print("El inverso calculado por MCD es: ", inverso)
