@@ -30,12 +30,12 @@ def cifrarDescifrarMensaje(llave, primoGrande, mensaje):
 
 if __name__ == '__main__':
     print('CRIPTOLOGIA ALGORITMO RSA')
-    primoUno = 31
-    primoDos = 17
-    primoGrande = primoUno * primoDos
+    primoUno = 11 #p
+    primoDos = 23 #q
+    primoGrande = primoUno * primoDos # n
     fi = (primoUno - 1) * (primoDos - 1)
-    llavePublica = calcularLlavePublica(fi)
-    llavePrivada = moduloInverso(llavePublica, fi)
+    llavePublica = calcularLlavePublica(fi) # e
+    llavePrivada = moduloInverso(llavePublica, fi) # d
     if llavePublica == -1:
         print('NO SE PUEDE CALCULAR E')
     else:
