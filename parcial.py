@@ -2,8 +2,8 @@ import math
 
 if __name__ == '__main__':
     print('PARCIAL CRIPTOLOGIA MÉTODO 1')
-    Zn = 431
-    A = 29
+    Zn = 220
+    A = 3
     for x in range(0, Zn, 1):
         resultado = A * x
         modulo = resultado % Zn
@@ -30,7 +30,7 @@ def moduloInverso(A, Zn):
 
 if __name__ == '__main__':
     print('\n\n\nPARCIAL CRIPTOLOGIA MÉTODO 2')
-    Zn = 431
-    A = 29
+    Zn = 220
+    A = 3
     inverso = moduloInverso(A, Zn)
     print("El inverso calculado por MCD es: ", inverso)
